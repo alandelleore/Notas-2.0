@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 
 function App() {
@@ -7,6 +7,16 @@ function App() {
   const [modoEdicion, setModoEdicion] = useState(false);
   const [id, setId] = useState("");
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    if (localStorage.getItem("tareas")) {
+      setTareas(JSON.parse(localStorage.getItem("tareas")));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("tareas", JSON.stringify(tareas));
+  }, [tareas]);
 
   const agregarTarea = (e) => {
     e.preventDefault();
