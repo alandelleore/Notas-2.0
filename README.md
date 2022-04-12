@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# NOTAS 2.0 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto CRUD simple realizado en React JS, lista de notas donde se permite agregar, editar y borrar y almacenar en localStorage.
+
++HTML +BOOTSTRAP CSS +JAVASCRIPT +REACT JS
+
++NANOID
+
+https://notas2.netlify.app/
+
+#View
+![viewscrud](https://user-images.githubusercontent.com/84545725/163064601-96e2fdb2-278b-4dac-82d3-650cdedddac6.jpg)
+
 
 ## Available Scripts
 
